@@ -1,5 +1,58 @@
 <img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
+# This fork
+
+Essentially, this is just a merge of two pull requests:
+
+### Support for logging into your (burner) youtube account:
+
+[PR-1670](https://github.com/jagrosh/MusicBot/pull/1670)
+
+### To allow building the project from source
+[PR-1703](https://github.com/jagrosh/MusicBot/pull/1703)
+
+## Easy deployment via docker
+
+Additionally, i thought a corresponding docker image would make things better:
+
+The image can be found on [dockerhub](https://hub.docker.com/repository/docker/chrisb09/jmusicbot/general)
+
+Docker-compose:
+
+```yaml
+version: '2.2'
+
+services:
+  jmusicbot:
+    image: chrisb09/jmusicbot:latest
+    container_name: jmusicbot_test
+    restart: unless-stopped
+    volumes:
+     - ./config:/jmb/config
+```
+
+although, obviously you should change `./config` to whatever path is right for your setup.
+Source code for the docker image is also on [Github](https://github.com/chrisb09/jmb-container).
+
+
+## YouTube-Login
+
+Obviously you still need to log in if you want to use youtube properly, hence you need to enable this in the config.
+If you are using a pre-existing config, simply add:
+```
+/ If you set this to true, the bot will use a Google account to play YouTube tracks.
+// This is only needed if you are experiencing issues with YouTube playback.
+// Once enabled, instructions for login will be written to the console and DMs.
+// DO NOT use your main Google account! Use an alternative account.
+
+youtubeoauth2=true
+```
+
+If you start with a clean slate this line should already be present, albeit with `false` being the default.
+As the author of the PR reiterates multiple times, do not use your main google account as using your account for a bot is most certainly against the ToS and thus you are endangering said account.
+
+To add the account you simply have to follow the very basic instructions printed either in the console or sent to you from the bot via discord after you have started it, open the linked google page and paste the code.
+
 # JMusicBot
 
 [![Downloads](https://img.shields.io/github/downloads/jagrosh/MusicBot/total.svg)](https://github.com/jagrosh/MusicBot/releases/latest)
