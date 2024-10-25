@@ -25,7 +25,7 @@ version: '2.2'
 services:
   jmusicbot:
     image: chrisb09/jmusicbot:latest
-    container_name: jmusicbot_test
+    container_name: jmusicbot
     restart: unless-stopped
     volumes:
      - ./config:/jmb/config
