@@ -11,6 +11,8 @@ Essentially, this is just a merge of two pull requests:
 ### To allow building the project from source
 [PR-1703](https://github.com/jagrosh/MusicBot/pull/1703)
 
+And I've now bumped the versions up to the newest [lavaplayer](https://mvnrepository.com/artifact/dev.arbjerg/lavaplayer)/[lavalink](https://maven.lavalink.dev/#/releases/dev/lavalink/youtube/common) versions. I will try to update this automatically in the future.
+
 ## Easy deployment via docker
 
 Additionally, i thought a corresponding docker image would make things better:
