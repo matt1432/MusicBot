@@ -43,7 +43,11 @@ public class OtherUtil
     public final static String NEW_VERSION_AVAILABLE = "There is a new version of JMusicBot available!\n"
                     + "Current version: %s\n"
                     + "New Version: %s\n\n"
-                    + "Please visit https://github.com/jagrosh/MusicBot/releases/latest to get the latest release.";
+                    + "Please visit https://github.com/chrisb09/MusicBot/releases to get the latest release."
+                    + "If you are using docker (or docker-compose), please pull the new image with:"
+                    + "Docker: docker pull chrisb09/jmusicbot"
+                    + "Docker-compose: docker-compose pull"+
+                    " and don't forget to restart the container.";
     private final static String WINDOWS_INVALID_PATH = "c:\\windows\\system32\\";
     
     /**
@@ -188,7 +192,7 @@ public class OtherUtil
         try
         {
             Response response = new OkHttpClient.Builder().build()
-                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/jagrosh/MusicBot/releases/latest").build())
+                    .newCall(new Request.Builder().get().url("https://api.github.com/repos/chrisb09/MusicBot/releases/latest").build())
                     .execute();
             ResponseBody body = response.body();
             if(body != null)
