@@ -2,7 +2,7 @@
 
 # This fork
 
-Essentially, this is just a merge of two pull requests:
+Essentially, this is just a merge of three pull requests:
 
 ### Support for logging into your (burner) youtube account:
 
@@ -11,7 +11,22 @@ Essentially, this is just a merge of two pull requests:
 ### To allow building the project from source
 [PR-1703](https://github.com/jagrosh/MusicBot/pull/1703)
 
+### Add YouTube PO token & IP rotation
+https://github.com/jagrosh/MusicBot/pull/1772
+
 And I've now bumped the versions up to the newest [lavaplayer](https://mvnrepository.com/artifact/dev.arbjerg/lavaplayer)/[lavalink](https://maven.lavalink.dev/#/releases/dev/lavalink/youtube/common) versions. I will try to update this automatically in the future.
+
+
+### For PO_Tokens: In your bot folder, edit "config.txt" and add
+```
+ytpotoken = "PO_TOKEN_HERE"
+ytvisitordata = "VISITOR_DATA_HERE"
+```
+
+To get po_token and visitor_data, use [youtube-trusted-session-generator](https://github.com/iv-org/youtube-trusted-session-generator)
+
+
+If you have problems with this fork, you could also check out [this other fork](https://github.com/SeVile/MusicBot).
 
 ## Easy deployment via docker
 
