@@ -57,6 +57,11 @@
             <version>2.2.2</version>
         </dependency>
         <dependency>
+            <groupId>dev.arbjerg</groupId>
+            <artifactId>lavaplayer-ext-youtube-rotator</artifactId>
+            <version>2.2.2</version>
+        </dependency>
+        <dependency>
             <groupId>dev.lavalink.youtube</groupId>
             <artifactId>common</artifactId>
             <version>1.11.1</version>
@@ -88,6 +93,33 @@
             <artifactId>jsoup</artifactId>
             <version>1.15.3</version>
         </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.27.0</version>
+            <!-- https://github.com/SeleniumHQ/selenium/issues/13791 -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-devtools-v85</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-devtools-v129</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-devtools-v130</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.9.2</version>
+        </dependency>
+
+
 
         <!-- Testing Dependencies -->
         <dependency>

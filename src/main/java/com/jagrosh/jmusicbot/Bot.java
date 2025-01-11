@@ -60,7 +60,7 @@ public class Bot
         this.threadpool = Executors.newSingleThreadScheduledExecutor();
         this.youTubeOauth2TokenHandler = new YoutubeOauth2TokenHandler();
         this.youTubeOauth2TokenHandler.init();
-        this.players = new PlayerManager(this);
+        this.players = new PlayerManager(this, config);
         this.players.init();
         this.nowplaying = new NowplayingHandler(this);
         this.nowplaying.init();
