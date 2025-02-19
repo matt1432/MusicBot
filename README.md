@@ -1,5 +1,9 @@
 <img align="right" src="https://i.imgur.com/zrE80HY.png" height="200" width="200">
 
+## Demo
+
+[https://discord.gg/4cp9CvjwaW](https://discord.gg/4cp9CvjwaW)
+
 # This fork
 
 Essentially, this is just a merge of three pull requests:
