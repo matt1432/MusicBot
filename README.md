@@ -2,7 +2,9 @@
 
 ## Demo
 
-[https://discord.gg/4cp9CvjwaW](https://discord.gg/4cp9CvjwaW)
+If you only want to temporarily join the demo server, use this link: [https://discord.gg/4cp9CvjwaW](https://discord.gg/4cp9CvjwaW)
+
+If you want to join the demo server permanently, use this link: [https://discord.gg/hK95396uB3](https://discord.gg/hK95396uB3)
 
 # This fork
 
