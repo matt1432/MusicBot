@@ -57,6 +57,10 @@ services:
 although, obviously you should change `./config` to whatever path is right for your setup.
 Source code for the docker image is also on [Github](https://github.com/chrisb09/jmb-container).
 
+### Windows
+
+If you want to run the bot on a windows host without docker, you obviously need to install java, and if you want to run it in the background something like [nssm](http://nssm.cc/) can be helpful.
+
 
 ## YouTube-Login
 
