@@ -25,11 +25,19 @@
                 <updatePolicy>always</updatePolicy>
             </snapshots>
         </repository>
+        <!--
         <repository>
             <id>m2.duncte123.dev</id>
             <name>m2-duncte123</name>
             <url>https://m2.duncte123.dev/releases</url>
         </repository>
+        -->
+        <repository>
+          <id>project.local</id>
+          <name>project</name>
+          <url>file:${project.basedir}/repo</url>
+        </repository>
+
         <repository>
             <id>arbjergDev</id>
             <name>Lavalink Repository</name>
@@ -101,22 +109,7 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.27.0</version>
-            <!-- https://github.com/SeleniumHQ/selenium/issues/13791 -->
-            <exclusions>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-devtools-v85</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-devtools-v129</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.seleniumhq.selenium</groupId>
-                    <artifactId>selenium-devtools-v130</artifactId>
-                </exclusion>
-            </exclusions>
+            <version>4.33.0</version>
         </dependency>
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
@@ -146,7 +139,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-shade-plugin</artifactId>
-            <version>1.5</version>
+            <version>3.6.0</version>
             <executions>
                 <execution>
                     <phase>package</phase>
