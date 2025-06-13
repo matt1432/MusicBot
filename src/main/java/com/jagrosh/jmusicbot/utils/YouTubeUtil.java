@@ -110,6 +110,8 @@ public class YouTubeUtil {
         else
             chromeOptions.addArguments("--headless=new");
 
+        chromeOptions.addArguments("--user-data-dir=/tmp");
+
         ChromeDriverService.Builder chromeDriverBuilder = new ChromeDriverService.Builder();
         if (LOGGER.isDebugEnabled())
             chromeDriverBuilder.withLogLevel(ChromiumDriverLogLevel.DEBUG);
